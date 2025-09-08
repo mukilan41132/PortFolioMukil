@@ -28,17 +28,15 @@ const App = () => {
       }
     });
   }, [activeStep]);
- 
+
   const handleNext = () => {
     if (activeStep < 6) setActiveStep(activeStep + 1);
   };
 
- 
   const handlePrev = () => {
     if (activeStep > 1) setActiveStep(activeStep - 1);
   };
 
- 
   return (
     <>
       <div className="background_style">

@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { Box, TextField, Button, Typography } from '@mui/material';
+import { useState } from "react";
+import { Box, TextField, Button, Typography } from "@mui/material";
 import axios from "axios";
-import { validateAlphabet } from '../Healper/Validation';
+import { validateAlphabet } from "../Healper/Validation";
 import "../styles/App.css";
-import SuccessPage from '../components/SuccessPage.jsx'
-import { address } from '../Constent/constent';
+import SuccessPage from "../components/SuccessPage.jsx";
+import { address } from "../Constent/constent";
 const ContactMe = () => {
   const [responseMessage, setResponseMessage] = useState("");
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     if (name === "name") {
       if (name === "" || validateAlphabet(value)) {
@@ -26,12 +26,12 @@ const ContactMe = () => {
     } else {
       setFormData((prevState) => ({
         ...prevState,
-        [name]: value
+        [name]: value,
       }));
     }
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     try {
@@ -41,8 +41,7 @@ const ContactMe = () => {
         },
       });
       setResponseMessage(response.data.message);
-      setFormData({ name: "", email: "", phone: '', message: "" });
-
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       setResponseMessage("Error: Could not submit the form");
       console.error("API error:", error);
@@ -52,24 +51,26 @@ const ContactMe = () => {
   return (
     <Box
       sx={{
-        width: '100%',
-        maxWidth: '600px',
-        margin: '40px auto',
-        padding: '24px',
+        width: "100%",
+        maxWidth: "600px",
+        margin: "40px auto",
+        padding: "24px",
         boxShadow: 3,
         borderRadius: 2,
-        backgroundColor: '#fafafa',
+        backgroundColor: "#fafafa",
       }}
       component="section"
-      aria-label="Contact form"
-    >
-      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', textAlign: 'center', mb: 3 }}>
+      aria-label="Contact form">
+      <Typography
+        variant="h4"
+        gutterBottom
+        sx={{ fontWeight: "bold", textAlign: "center", mb: 3 }}>
         Contact Me
       </Typography>
       {responseMessage ? (
         <SuccessPage />
       ) : (
-        <form onSubmit={handleSubmit} noValidate className='form-container'>
+        <form onSubmit={handleSubmit} noValidate className="form-container">
           <TextField
             fullWidth
             size="small"
@@ -121,12 +122,15 @@ const ContactMe = () => {
             aria-label="Your Message"
           />
 
-          <Button type="submit" size="small" variant="contained" color="primary">
+          <Button
+            type="submit"
+            size="small"
+            variant="contained"
+            color="primary">
             Submit
           </Button>
         </form>
       )}
-
     </Box>
   );
 };

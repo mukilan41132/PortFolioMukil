@@ -5,7 +5,7 @@ import {
   Button,
   Container,
   Divider,
-  Grid,
+ 
   IconButton,
   Link,
   List,
@@ -17,12 +17,14 @@ import {
   Fade,
   Collapse,
 } from "@mui/material";
+import Grid from '@mui/material/Grid';
+
 import { Close } from "@mui/icons-material";
 import { FaArrowLeft } from "react-icons/fa";
-import { workExperience } from "../Assets/Data/workExperience";
+import { workExperience } from "../assets/Data/workExperience";
 type ProjectProps = {
   project: any;
-  onBack: any; // callback function
+  onBack: any;
 };
 const Project: React.FC<ProjectProps> = ({ project, onBack }) => {
   let workExperiences = workExperience?.workExperience;
@@ -33,9 +35,12 @@ const Project: React.FC<ProjectProps> = ({ project, onBack }) => {
   const [selectedImage, setSelectedImage] = useState("");
   const [featureIndex, setFeatureIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
-  const [expandedFeatures, setExpandedFeatures] = useState({});
 
-  const handleOpen = (img:any, fIndex:any, iIndex:any) => {
+  const [expandedFeatures, setExpandedFeatures] = useState<
+    Record<number, boolean>
+  >({});
+
+  const handleOpen = (img: any, fIndex: any, iIndex: any) => {
     setSelectedImage(img);
     setFeatureIndex(fIndex);
     setImageIndex(iIndex);
@@ -73,8 +78,8 @@ const Project: React.FC<ProjectProps> = ({ project, onBack }) => {
     setSelectedImage(images[(imageIndex - 1) % images.length]);
   };
 
-  const toggleExpand = (idx:any) => {
-    setExpandedFeatures((prev:any) => ({ ...prev, [idx]: !prev[idx] }));
+  const toggleExpand = (idx: any) => {
+    setExpandedFeatures((prev: any) => ({ ...prev, [idx]: !prev[idx] }));
   };
 
   return (
@@ -324,6 +329,6 @@ const Project: React.FC<ProjectProps> = ({ project, onBack }) => {
       </Container>
     </>
   );
-}
+};
 
 export default Project;

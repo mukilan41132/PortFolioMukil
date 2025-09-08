@@ -19,12 +19,12 @@ export const validationPhone = (value: string) => {
     return phoneRegex.test(value);
 }
 
-const validatePhoneNumberIntl = (value: string) => {
+export const validatePhoneNumberIntl = (value: string) => {
     const regex = /^[+]?[0-9]{1,4}?[-.●]?[0-9]{1,4}[-.●]?[0-9]{1,4}[-.●]?[0-9]{1,9}$/;
     return regex.test(value);
 };
 
-const validateURL = (value: string) => {
+export const validateURL = (value: string) => {
     const regex = /^(https?:\/\/)?([a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})(\/[a-zA-Z0-9.-]*)*\/?$/;
     return regex.test(value);
 };

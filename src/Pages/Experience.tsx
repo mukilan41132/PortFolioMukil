@@ -1,4 +1,4 @@
-import { workExperience } from "../Assets/Data/workExperience";
+import { workExperience } from "../assets/Data/workExperience";
 
 import "../styles/scss-style/TimeLine.scss";
 const ExperienceList = () => {

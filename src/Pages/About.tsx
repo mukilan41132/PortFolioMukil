@@ -44,7 +44,7 @@ const About = () => {
         </Box>
 
         <Typography variant="body1" paragraph>
-          I'm passionate about building dynamic web apps and ensuring efficient, scalable solutions.
+          I'm passionate about building    dynamic web apps and ensuring efficient, scalable solutions.
         </Typography>
 
         <Typography variant="body1" paragraph>

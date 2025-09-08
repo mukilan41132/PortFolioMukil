@@ -1,0 +1,50 @@
+.Tech-style {
+    padding-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tech-style .MuiListItem-root {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-title {
+    max-inline-size: 100%;
+    width: 100%;
+    font-family: "Caveat", cursive;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.project-title:hover {
+    text-decoration: underline;
+}
+.project-description {
+    max-inline-size: 100%;
+    width: 100%;
+    font-family: "Caveat", cursive;
+}
+
+.feature-title {
+    max-inline-size: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.technology-list-item,
+.tool-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.technology-list-item img,
+.tool-list-item img {
+    border-radius: 4px;
+}

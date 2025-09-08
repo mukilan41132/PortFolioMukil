@@ -1,0 +1,56 @@
+.work-experience {
+  font-family: "Caveat", cursive;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h2 {
+  color: #333;
+}
+
+.experience-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.experience-card a:hover {
+  text-decoration: underline;
+}
+
+.project-details ul,
+.key-achievements ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.project-details h4,
+.key-achievements h4 {
+  margin-top: 15px;
+}
+
+.Tech-style {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  font-family: Caveat, cursive;
+}
+
+.custom-link {
+  text-decoration: none; 
+  color: #007bff; 
+  font-weight: bold; 
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  color: #0056b3; 
+  text-decoration: underline; 
+}
+

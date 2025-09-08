@@ -1,0 +1,80 @@
+[
+    {
+        "skill": "JavaScript",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "title": "JavaScript",
+        "description": "Experienced in ES6+ JavaScript features, DOM manipulation, event handling, and asynchronous programming using Promises and async/await. Skilled in building dynamic and interactive web applications."
+    },
+    {
+        "skill": "React.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "title": "React.js",
+        "description": "Experienced in building dynamic and responsive user interfaces using React.js. Proficient in using hooks like useState, useEffect, useContext, useParams, useRef, and useReducer. Familiar with React Router for routing, JSX for conditional rendering, and virtual DOM concepts. Skilled in avoiding prop drilling using context and custom hooks, and in working with both functional and class components."
+    },
+    {
+        "skill": "HTML",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        "title": "HTML",
+        "description": "Well-versed in writing semantic and accessible HTML5, structuring web pages effectively, and optimizing for SEO and responsive design."
+    },
+    {
+        "skill": "CSS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        "title": "CSS",
+        "description": "Skilled in creating responsive and modern UIs using CSS3, Flexbox, Grid, animations, and pre-processors like SASS. Experienced in Tailwind CSS and Bootstrap for rapid UI development."
+    },
+    {
+        "skill": "Python",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        "title": "Python",
+        "description": "Basic understanding of Python for scripting and automation. Familiar with data structures, algorithms, and backend development using frameworks like Flask."
+    },
+    {
+        "skill": "Java",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+        "title": "Java",
+        "description": "Skilled in developing robust backend applications using Java, with experience in object-oriented programming, data structures, and frameworks like Spring Boot."
+    },
+    {
+        "skill": "Node.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "title": "Node.js",
+        "description": "Experience in building RESTful APIs using Express.js, handling middleware, working with databases, and implementing authentication and authorization mechanisms."
+    },
+    {
+        "skill": "Express.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "title": "Express.js",
+        "description": "Proficient in setting up server-side applications using Express.js, handling API routing, middleware, and integrating with databases like MongoDB and MySQL."
+    },
+    {
+        "skill": "MongoDB",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "title": "MongoDB",
+        "description": "Experienced in designing NoSQL database schemas, working with Mongoose ORM, CRUD operations, indexing, and optimizing queries for performance."
+    },
+    {
+        "skill": "TypeScript",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "title": "TypeScript",
+        "description": "Familiar with TypeScript for type-safe development, interfaces, generics, and integrating with React and Node.js for scalable and maintainable applications."
+    },
+    {
+        "skill": "Bootstrap",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        "title": "Bootstrap",
+        "description": "Proficient in using Bootstrap for rapid UI development, responsive grid system, utility classes, and customizing themes for modern web applications."
+    },
+    {
+        "skill": "MySQL",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        "title": "MySQL",
+        "description": "Experienced in designing relational databases, writing complex SQL queries, indexing, and integrating with backend applications for data management."
+    },
+    {
+        "skill": "Material-UI",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+        "title": "Material-UI",
+        "description": "Skilled in using Material-UI to create elegant and consistent UI components, customize themes, and improve user experience in React applications."
+    }
+]

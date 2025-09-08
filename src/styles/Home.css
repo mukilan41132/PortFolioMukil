@@ -1,0 +1,61 @@
+.hero-section {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-image: url('../Assets/Images/Developer.png');
+    /* Ensure it's a transparent PNG */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Shrinks to fit */
+    color: white;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.hero-text .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #2c5364;
+}

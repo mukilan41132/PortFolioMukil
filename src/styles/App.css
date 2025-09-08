@@ -1,0 +1,145 @@
+:root {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+  --font-size: 30vmin;
+  --font-weight: 700;
+  --letter-spacing: calc(1em / 8);
+}
+
+html,
+body,
+.heading {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive !important;
+}
+
+body {
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.fsw {
+  font-weight: 700;
+  color: #4abecd;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_style {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.maincontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #4abecd;
+  text-decoration: underline;
+  text-decoration-color: #06816e;
+}
+
+.navBarmobile {
+  display: none;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(#000000, #067c8c);
+  height: 70px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(#000000, #067c8c);
+  height: 70px;
+  z-index: 12;
+}
+
+.background_style {
+  background: rgb(2, 0, 36);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.nav_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  list-style: none;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+a {
+  color: #4abecd;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  transition: 1ms;
+}
+
+
+
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#icon {
+  font-size: 50px;
+  color: #13adc2;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

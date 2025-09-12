@@ -4,6 +4,7 @@ import AppContext from '../AppContext';
 
 const useTabSwitcher = () => {
   const { oldId, setOldId } = useContext(AppContext);
+  
   const oldIdRef = useRef(oldId);
 
   useEffect(() => {

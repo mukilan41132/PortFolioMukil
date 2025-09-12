@@ -10,7 +10,8 @@ import useTabSwitcher from "../Hooks/useTabSwitcher";
 import "../styles/scss-style/style.scss";
 import "../styles/App.css";
 import ProjectShowcase from "./Project";
-
+import "../styles/scss-style/navButton.scss";
+import { useSwipeable } from "react-swipeable";
 const App = () => {
   useTabSwitcher();
 
@@ -36,30 +37,17 @@ const App = () => {
   const handlePrev = () => {
     if (activeStep > 1) setActiveStep(activeStep - 1);
   };
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrev(),
+    preventScrollOnSwipe: true,
+    trackMouse: true,  
+  });
 
   return (
     <>
-      <div className="background_style">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginTop: "20px",
-          }}>
-          <button
-            onClick={handlePrev}
-            disabled={activeStep === 1}
-            className="btn btn-secondary tabs-controls__link">
-            ◀ Previous
-          </button>
-
-          <button
-            onClick={handleNext}
-            disabled={activeStep === 6}
-            className="btn btn-primary tabs-controls__link">
-            Next ▶
-          </button>
-        </div>
+      <div className="background_style"{...handlers}>
+ 
         <div className="section">
           <section className="cards-container">
             <div
@@ -117,8 +105,8 @@ const App = () => {
             </div>
           </section>
         </div>
-
-        {/* Next Button */}
+ 
+ 
       </div>
     </>
   );

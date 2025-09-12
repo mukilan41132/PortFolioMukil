@@ -1,11 +1,11 @@
 .hero-section {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     background-image: url('../Assets/Images/Developer.png');
-    /* Ensure it's a transparent PNG */
+ 
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /* Shrinks to fit */
+ 
     color: white;
     padding: 4rem 2rem;
     min-height: 100vh;

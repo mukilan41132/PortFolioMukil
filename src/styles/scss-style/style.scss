@@ -1,6 +1,6 @@
 $itemsCount: 6;
 @use "sass:math";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
 h1 {
   margin: -8px;
@@ -9,7 +9,6 @@ h1 {
   color: #020202;
   text-align: center;
   font-family: cursive;
-
 }
 
 .Btn-center {
@@ -69,7 +68,7 @@ h1 {
     background-color: #4abecd;
     border-radius: 2px;
     margin: auto;
-    content: '';
+    content: "";
     transition: width 0.4s;
   }
 }
@@ -108,28 +107,31 @@ h1 {
     z-index: 100;
     color: #fff;
     opacity: 0;
-    transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+    transition: color 0.5s, background-color 0.5s, transform 1s,
+      opacity 0.2s 0.4s;
 
     h1 {
       color: #fff;
 
-      transition: color 0.5s
+      transition: color 0.5s;
     }
 
     @for $i from 1 through $itemsCount {
       &:nth-of-type(#{$i}) {
-        transform:
-          rotate(math.random(100) - 100 + deg) translateX((math.random(1) + 100) * 1%) translateY(math.random(60) * -1%) scale(math.random(10) * 0.1) skewX(math.random(12) + deg) skewY(math.random(12) + deg);
+        transform: rotate(math.random(100) - 100 + deg)
+          translateX((math.random(1) + 100) * 1%)
+          translateY(math.random(60) * -1%)
+          scale(math.random(10) * 0.1)
+          skewX(math.random(12) + deg)
+          skewY(math.random(12) + deg);
       }
     }
   }
 
   @for $i from 1 through $itemsCount {
     $zIndexStartValue: $itemsCount + 1;
-    $xValue: (
-      $i - 1) * 10px;
-    $yValue: (
-      $i - 1) * 10px;
+    $xValue: ($i - 1) * 10px;
+    $yValue: ($i - 1) * 10px;
     $zIndexValue: $itemsCount - $i;
 
     &:nth-of-type(#{$i}) {
@@ -141,31 +143,49 @@ h1 {
 .papers {
   margin: 2em auto;
   // background: #fff;
-  box-shadow: 4px 4px 0 #00486B;
-  background-image:
-    linear-gradient(90deg,
-      #fff 12px, 0,
-      #00486B 15px, 0,
-      #1373A9 20px, 0,
-      #fff 100%),
-    radial-gradient(circle closest-side,
-      rgba(255, 255, 255, 0) 88%,
-      #fff 100%),
-    radial-gradient(circle at 22px 8px,
-      #1373A9 40%,
-      #00486B 40%,
-      #00486B 100%
-  );
-background-size: 32px 8px, 32px 16px, 32px 16px;
-background-repeat: space no-repeat;
-background-position: center top, center 6px, center 6px;
-height: 500px;
+  box-shadow: 4px 4px 0 #00486b;
+  background-image: linear-gradient(
+      90deg,
+      #fff 12px,
+      0,
+      #00486b 15px,
+      0,
+      #1373a9 20px,
+      0,
+      #fff 100%
+    ),
+    radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 88%, #fff 100%),
+    radial-gradient(circle at 22px 8px, #1373a9 40%, #00486b 40%, #00486b 100%);
+  background-size: 32px 8px, 32px 16px, 32px 16px;
+  background-repeat: space no-repeat;
+  background-position: center top, center 6px, center 6px;
+  height: 500px;
 
-&--alt {
-  background-image: linear-gradient(90deg, #fff 12px, 0, #00486B 15px, 0, #1373A9 20px, 0, #fff 100%), radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 88%, #fff 100%), radial-gradient(circle at 22px 8px, #1373A9 40%, #00486B 40%, #00486B 100%);
-  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 21'%3E%3Cpath d='M20 0h-7v6.9a7.5 7.5 0 107 0V0z' fill='%231373A9'/%3E%3Cpath d='M13 0h3v6.9a7.5 7.5 0 002 14 7.5 7.5 0 01-9-7.4c0-2.9 1.6-5.4 4-6.6V0z' fill='%2300486B'/%3E%3C/svg%3E");
-  background-size: 2em 1.3125em;
-}
+  &--alt {
+    background-image: linear-gradient(
+        90deg,
+        #fff 12px,
+        0,
+        #00486b 15px,
+        0,
+        #1373a9 20px,
+        0,
+        #fff 100%
+      ),
+      radial-gradient(
+        circle closest-side,
+        rgba(255, 255, 255, 0) 88%,
+        #fff 100%
+      ),
+      radial-gradient(
+        circle at 22px 8px,
+        #1373a9 40%,
+        #00486b 40%,
+        #00486b 100%
+      );
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 21'%3E%3Cpath d='M20 0h-7v6.9a7.5 7.5 0 107 0V0z' fill='%231373A9'/%3E%3Cpath d='M13 0h3v6.9a7.5 7.5 0 002 14 7.5 7.5 0 01-9-7.4c0-2.9 1.6-5.4 4-6.6V0z' fill='%2300486B'/%3E%3C/svg%3E");
+    background-size: 2em 1.3125em;
+  }
 }
 
 @media (max-width: 640px) {
@@ -173,11 +193,10 @@ height: 500px;
     position: absolute;
     width: 100%;
     height: 1276px;
-    border: 1px solid #423E37;
+    border: 1px solid #423e37;
     box-sizing: border-box;
     // padding: 14px;
-    transition: transform 0.3s,
-      opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
     border-radius: 15px;
   }
 
@@ -196,11 +215,10 @@ height: 500px;
     position: absolute;
     width: 100%;
     height: 550px;
-    border: 1px solid #423E37;
+    border: 1px solid #423e37;
     box-sizing: border-box;
     // padding: 14px;
-    transition: transform 0.3s,
-      opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
     border-radius: 15px;
   }
 }

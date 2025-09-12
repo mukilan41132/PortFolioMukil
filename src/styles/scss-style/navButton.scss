@@ -1,0 +1,39 @@
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  margin: 20px 0;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+
+    &:disabled {
+      background-color: #b0b0b0;
+      cursor: not-allowed;
+    }
+  }
+
+  .btn-primary {
+    background-color: #1976d2;
+    color: #fff;
+
+    &:disabled {
+      background-color: #90caf9;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.cards-container,
+.cards-container * {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

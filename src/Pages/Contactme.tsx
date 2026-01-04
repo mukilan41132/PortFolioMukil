@@ -52,7 +52,7 @@ const ContactMe = () => {
     <Box
       sx={{
         width: "100%",
-        maxWidth: "600px",
+       maxWidth: "600px",
         margin: "40px auto",
         padding: "24px",
         boxShadow: 3,

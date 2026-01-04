@@ -40,6 +40,7 @@ const About = () => {
           <li><b>Backend Development:</b> Node.js, Express.js, Java Spring Boot, MongoDB</li>
           <li><b>API & Web: </b>  RESTful APIs, Axios, Swagger, Postman, JSON</li>
           <li><b>Version Control:</b> Git, GitHub</li>
+           <li><b>build tool:</b> Vite, Webpack</li>
           <li><b>Healthcare Standards:</b> Custom FHIR API Development, FHIR Resource CRUD </li>
         </Box>
 

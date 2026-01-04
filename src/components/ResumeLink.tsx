@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@mui/material";
 import resume from "../Assets/Documents/Softwaredeveloper_Mukilan.pdf";
 const ResumeLink = () => {

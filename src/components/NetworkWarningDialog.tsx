@@ -17,7 +17,7 @@ const NetworkWarningDialog: React.FC<NetworkWarningDialogProps> = ({
   onRetry,
 }) => {
   return (
-    <Dialog open={open} onClose={onClose}>
+    <Dialog maxWidth="xs" open={open} onClose={onClose}>
       <DialogTitle>Network Error</DialogTitle>
       <DialogContent>
         <p>
@@ -25,7 +25,7 @@ const NetworkWarningDialog: React.FC<NetworkWarningDialogProps> = ({
         </p>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onRetry} color="primary">
+        <Button size="small" onClick={onRetry} color="primary">
           Retry
         </Button>
       </DialogActions>
